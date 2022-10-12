@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul,
+ol,
+menu {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.container .in_partenza,
+.container .cancellati,
+.container .title {
+  text-align: center;
+}
+
+.container .title {
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+.container .in_partenza,
+.container .cancellati {
+  margin-bottom: 2rem;
+}
+
+.container .trains-list {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container .trains-list .list-item {
+  flex-basis: calc((100% - 4rem) / 5);
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+.container .trains-list .list-item .accent {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.container .trains-list .list-item .info {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.container .trains-list .list-item .info:last-child {
+  padding-bottom: 1rem;
+}
+
